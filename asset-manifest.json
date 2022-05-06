@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.94eddc2d.css",
-    "main.js": "/portfolio/static/js/main.eae87151.js",
-    "static/media/soomgo_flow.svg": "/portfolio/static/media/soomgo_flow.75687542abb0294ae10030efa3171014.svg",
+    "main.js": "/portfolio/static/js/main.dee76ae3.js",
     "static/media/kocca_flow.png": "/portfolio/static/media/kocca_flow.0c094bb10e098f1cc653.png",
     "static/media/S-CoreDream-5Medium.svg": "/portfolio/static/media/S-CoreDream-5Medium.1146f4f494b56818734b.svg",
     "static/media/S-CoreDream-4Regular.svg": "/portfolio/static/media/S-CoreDream-4Regular.098b7fe4d829da37f809.svg",
@@ -33,10 +32,10 @@
     "static/media/VanguardCF-Bold.woff2": "/portfolio/static/media/VanguardCF-Bold.a4b427c89374000c79b3.woff2",
     "index.html": "/portfolio/index.html",
     "main.94eddc2d.css.map": "/portfolio/static/css/main.94eddc2d.css.map",
-    "main.eae87151.js.map": "/portfolio/static/js/main.eae87151.js.map"
+    "main.dee76ae3.js.map": "/portfolio/static/js/main.dee76ae3.js.map"
   },
   "entrypoints": [
     "static/css/main.94eddc2d.css",
-    "static/js/main.eae87151.js"
+    "static/js/main.dee76ae3.js"
   ]
 }
