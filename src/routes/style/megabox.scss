@@ -1,0 +1,50 @@
+@import '../../components/style/globalstyle.scss'; 
+@import '../../components/style/font.scss';
+
+#megabox{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  color : #222;
+  .color_box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $color2;
+    width: 70vw;
+    height: 85vh;
+    border-radius: 0 30% 0 0 / 0 40% 0 0;
+    .text{
+      padding: 80px;
+      h2{
+      font-size: 80px;
+      font-family: 'SDSwaggerTTF';
+      color: #222;
+      margin-bottom: 50px;
+      }
+      p{
+        font-family: 'S_CoreDream_Medium';
+        margin: 100px 0;
+        font-size: 28px;
+      }
+      .skills{
+        position: absolute;
+        top: 70px;
+        right: 300px;
+        .skill_logo{
+          height: 100px;
+          margin-right: 30px;
+        }
+      }
+      .link{
+        a{
+          img{height: 100px;}
+        }
+      }
+    }
+  }
+  .flow_img{
+    img{width: 30%; position: absolute; top: -10%; right: 10%; transform: rotate(25deg);
+    }
+  }
+}

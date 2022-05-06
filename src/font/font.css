@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'VanguardCF-Bold';
+  src: url('VanguardCF-Bold.eot');
+  src: url('VanguardCF-Bold.eot?#iefix') format('embedded-opentype'),
+       url('VanguardCF-Bold.svg#VanguardCF-Bold') format('svg'),
+       url('VanguardCF-Bold.ttf') format('truetype'),
+       url('VanguardCF-Bold.woff') format('woff'),
+       url('VanguardCF-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

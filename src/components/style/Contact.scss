@@ -1,0 +1,56 @@
+@import './font.scss'; 
+@keyframes anime_textup { 0% { top: 0; } 20% { top: -0.2rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
+
+#contact{
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  .contact_h{
+    height: 50px; line-height: 50px;
+    h1{
+      img{width: 50px; height: 50px;}
+    }
+  }
+  .contact_m{
+    margin: 0 auto;
+    padding: 150px 200px;
+    line-height: 100px;
+    h2{
+      font-family: 'VanguardCF', sans-serif ;
+      font-size: 80px;
+      margin-bottom: 50px;
+      p{
+        display: inline-block; border-bottom: 3px solid #ddd; text-shadow: 0 2px 4px rgba(255, 255, 255, 0.25);
+        span{
+          position: relative;
+          animation: anime_textup 1.5s infinite;
+          &:nth-of-type(1) {
+            animation-delay: .1s;
+          }          
+          &:nth-of-type(2) {
+            animation-delay: .2s;
+          }          
+          &:nth-of-type(3) {
+            animation-delay: .3s;
+          }
+          &:nth-of-type(4) {
+            animation-delay: .4s;
+          }          
+          &:nth-of-type(5) {animation-delay: .5s;}
+          &:nth-of-type(6) {animation-delay: .6s;}
+          &:nth-of-type(7) {animation-delay: .7s;}
+          &:nth-of-type(8) {animation-delay: .8s;}
+          &:nth-of-type(9) {animation-delay: .9s;}
+          &:nth-of-type(10) {animation-delay: 1s;}
+          &:nth-of-type(11) {animation-delay: 1.1s;}
+          &:nth-of-type(12) {animation-delay: 1.2s;}
+          &:nth-of-type(13) {animation-delay: 1.3s;}
+        }
+      }
+    }
+    .info{
+      font-family: 'SDSwaggerTTF', sans-serif;
+      font-size: 36px;
+    }
+  }
+}
