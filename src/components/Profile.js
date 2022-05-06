@@ -1,44 +1,46 @@
 import './style/Profile.scss';
+import logo from './img/logo.svg';
+import selfie from "./img/profile_pic.jpg";
 
 const Profile = () => {
   return (
   <div id="profile">
       <header className="profile_h">
-        <h1><img src='./img/logo.svg' alt='logo' /></h1>
+        <h1><img src={logo} alt='logo' /></h1>
       </header>
       <section className="profile_c">
         <h2><span>ABOUT ME</span></h2>
         <div className="flex">
           <div className='flex'>
             <section className="pic">
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
             </section>
             <section className="pic">
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
+            <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
             </section>
             <section className="pic">
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
+            <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
             </section>
             <section className="pic">
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
+            <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
             </section>
             <section className="pic">
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
-              <img src="./img/profile_pic.jpg" alt='profile_pic' />
+            <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
+              <img src={selfie} alt='profile_pic' />
             </section>
           </div>
           <div className='information'>

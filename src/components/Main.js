@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import './style/Main.scss';
+import logo from './img/logo.svg'
 
 const Main = () => {
   const titleRef = useRef()
@@ -14,7 +15,7 @@ const Main = () => {
   return (
     <div id="main">
       <header className="main_h">
-        <h1><img src='./img/logo.svg' alt='logo' /></h1>
+        <h1><img src={logo} alt='logo' /></h1>
       </header>
       <main className="main_m">
         <div className='container' onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
@@ -25,8 +26,5 @@ const Main = () => {
     </div>
   )
 };
-
-
-
 
 export default Main;

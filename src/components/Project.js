@@ -1,74 +1,120 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/Project.scss';
+import logo from './img/logo.svg';
+import frame1 from './img/project-graphics1.svg';
+import frame2 from './img/project-graphics2.svg';
+import frame3 from './img/project-graphics3.svg';
+import frame4 from './img/project-graphics4.svg';
+import frame5 from './img/project-graphics5.svg';
+import frame6 from './img/project-graphics6.svg';
+import frame7 from './img/project-graphics7.svg';
+import con_detail from './img/con_color.png';
+import megabox_detail from './img/megabox_color.png';
+import soomgo_detail from './img/soomgo_color.png';
+
+const linkData = [
+  {
+    index: 1,
+    title : "한국콘텐츠진흥원",
+    isTitleKorean: true,
+    to: "/kocca",
+    skills: [
+      "HTML",
+      "CSS",
+      "JQuery"
+    ],
+    img: con_detail,
+    frameImg: frame1,
+    classN : "pro_item project1"
+  },
+  {
+    index: 2,
+    title : "MEGABOX",
+    isTitleKorean: false,
+    to: "/megabox",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    img: megabox_detail,
+    frameImg: frame2,
+    classN : "pro_item project2"
+  },
+  {
+    index: 3,
+    title : "숨고",
+    isTitleKorean: true,
+    to: "/soomgo",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    img: soomgo_detail,
+    frameImg: frame3,
+    classN : "pro_item project3"
+  },
+  {
+    index: 4,
+    title : "TO DO LIST",
+    isTitleKorean: false,
+    to: "/",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    frameImg: frame4,
+    classN : "pro_item project4"
+  },
+  {
+    index: 5,
+    title : "COIN TRACKER",
+    isTitleKorean: false,
+    to: "/",
+    skills: [
+      "React",
+      "TypeScript"
+    ],
+    frameImg: frame5,
+    classN : "pro_item project5"
+  },
+  {
+    index: 6,
+    title : "TRELLO",
+    isTitleKorean: false,
+    to: "/",
+    skills: [
+      "React"
+    ],
+    frameImg: frame6,
+    classN : "pro_item project6"
+  },
+  {
+    index: 7,
+    title : "NETFLIX",
+    isTitleKorean: false,
+    to: "/",
+    skills: [
+      "React"
+    ],
+    frameImg: frame7,
+    classN : "pro_item project7"
+  },
+]
 
 const Project = () => {
-  /* const titleRef = useRef()
-  const handleMouseMove = (rotate) => {
-    let x = (window.innerWidth / 2 - rotate.clientX) / 20;
-    let y = (window.innerHeight / 2 - rotate.clientY)/ 20;
-    titleRef.current.style.transform = "rotateY(" + -x + "deg) rotateX(" + y + "deg)";
-  } */
-  const [color, setColor] = useState(true);
-  const handleMouseOver = () => {
-    setColor(false);
-  }
-  const handleMouseOut = () => {
-    setColor(true);
-  }
-
-  /* const handleMouseOver = () => {
-    imgRef.current.src = './img/con_color.png'
-  }
-  const handleMouseOut = () => {
-    imgRef.current.src = './img/con_black.png'
-  } */
   return (
   <div id="project">
       <header className="project_h">
-        <h1><img src='./img/logo.svg' alt='logo' /></h1>
+        <h1><img src={logo} alt='logo' /></h1>
       </header>
       <main className="project_m">
         <div className='pro_list'>
           <h2><span>PROJECTS</span></h2>
-          <Link to="/kocca" className="pro_item project1" /* onMouseMove={handleMouseMove} ref={titleRef} */ onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <h3>01. <span className='kr_font'>한국콘텐츠진흥원</span></h3>
-            <p># HTML<br /># CSS<br /># JQuery</p>
-            <img src='./img/project-graphics1.svg' alt='frame' />
-            <img src='./img/con_color.png' className={color ? 'black detail_photo' : 'detail_photo'} />
-          </Link>
-          <Link to="/megabox" className="pro_item project2" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <h3>02. MEGABOX</h3>
-            <p># HTML<br /># CSS<br /># JavaScript</p>
-            <img src='./img/project-graphics2.svg' alt='frame' />
-            <img src='./img/megabox_color.png' className={color ? 'black detail_photo' : 'detail_photo'} />
-          </Link>
-          <Link to="/soomgo" className="pro_item project3" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-            <h3>03. <span className='kr_font'>숨고</span></h3>
-            <p># HTML<br /># CSS<br /># JavaScript</p>
-            <img src='./img/project-graphics3.svg' alt='frame' />
-            <img src='./img/soomgo_color.png' className={color ? 'black detail_photo' : 'detail_photo'} />
-          </Link>
-          <section className="pro_item project4">
-            <h3>04. TO DO LIST</h3>
-            <p># HTML<br /># CSS<br /># JavaScript</p>
-            <img src='./img/project-graphics4.svg' alt='frame' />
-          </section>
-          <section className="pro_item project5">
-            <h3>05. COIN TRACKER</h3>
-            <p># React<br /># TypeScript</p>
-            <img src='./img/project-graphics5.svg' alt='frame' />
-          </section>
-          <section className="pro_item project6">
-            <h3>06. TRELLO</h3>
-            <p># React</p>
-            <img src='./img/project-graphics6.svg' alt='frame' />
-          </section>
-          <section className="pro_item project7">
-            <h3>07. NETFLIX</h3>
-            <p># React</p>
-            <img src='./img/project-graphics7.svg' alt='frame' />
-          </section>
+          {linkData.map((link, idx) => <ALink data={link} key={idx} />)}
         </div>
       </main>
   </div>
@@ -76,3 +122,48 @@ const Project = () => {
 };
 
 export default Project;
+
+const ALink = ({data: {
+    index, 
+    title,
+    isTitleKorean,
+    to,
+    skills,
+    img,
+    frameImg,
+    classN
+}}) => {
+  return(
+    <Link to={to} className={classN}>
+            <h3>{`0${index}`} {isTitleKorean ? <span className='kr_font'>{title}</span>: <>{title}</>}</h3>
+            <p>{skills.map((skill, idx )=>
+            <span key={Math.random()}>
+            {idx === 0 ? 
+              <>
+                {`# ${skill}`} 
+              </> 
+              :
+              <>
+                <br/>{`# ${skill}`} 
+              </> 
+            }
+            </span>
+            )}</p>
+            <img src={frameImg} alt='frame' />
+            <img src={img} className={'detail_photo'} />
+    </Link>
+  )
+}
+
+  // const handleMouseMove = (rotate) => {
+  //   let x = (window.innerWidth / 2 - rotate.clientX) / 20;
+  //   let y = (window.innerHeight / 2 - rotate.clientY) /8;
+  //   titleRef.current.style.transform = "rotateY(" +  -x + "deg) rotateX(" + y + "deg)";
+  // }
+  // const handleMouseOut = () => {
+  //   titleRef.current.style.transform = "rotate(0)"
+  // }
+
+  // console.log(skills)
+
+  // onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}

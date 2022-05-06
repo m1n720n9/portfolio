@@ -1,11 +1,12 @@
 import './style/Contact.scss';
+import logo from './img/logo.svg'
 
 
 const Contact = () => {
   return (
   <div id="contact">
       <header className="contact_h">
-        <h1><img src='./img/logo.svg' alt='logo' /></h1>
+      <h1><img src={logo} alt='logo' /></h1>
       </header>
       <main className="contact_m">
         <h2>
@@ -37,3 +38,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+

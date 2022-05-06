@@ -48,8 +48,10 @@
         img{
           width: 200px; position: absolute; bottom: 0; right: 0;
         }
-        img.detail_photo{width: 170px; position: absolute; bottom: 20px; right: 20px;}
-        img.black{filter: grayscale(100%);}
+        img.detail_photo{width: 170px; position: absolute; bottom: 20px; right: 20px; filter: grayscale(100%);}
+        &:hover .detail_photo{  
+          filter: grayscale(0%);
+        }
       }
       .project1{background: $color1;}
       .project2{background: $color2;}
@@ -61,3 +63,5 @@
     }
   }
 };
+
+
