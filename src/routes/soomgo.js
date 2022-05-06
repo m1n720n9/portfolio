@@ -18,7 +18,7 @@ const Soomgo = () => {
         </div>
       </div>
       <div className="flow_img">
-        <a href="https://m1n720n9.github.io/Soomgo/" target='_blank'><img src={require('./img/soomgo_flow.svg').default} /></a>
+        <a href="https://m1n720n9.github.io/Soomgo/" target='_blank'></a>
       </div>
     </section>
   )
