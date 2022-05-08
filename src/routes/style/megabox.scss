@@ -44,7 +44,12 @@
     }
   }
   .flow_img{
-    img{width: 30%; position: absolute; top: -10%; right: 10%; transform: rotate(25deg);
+    img{
+      width: 30%;
+      position: absolute;
+      top: -10%;
+      right: 10%;
+      transform: rotate(25deg);
     }
   }
 }

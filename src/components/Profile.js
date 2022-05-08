@@ -1,6 +1,14 @@
 import './style/Profile.scss';
 import logo from './img/logo.svg';
-import selfie from "./img/profile_pic.jpg";
+import selfie from "./img/zev.jpg";
+
+const Selfie = () => {
+  return(
+    <section className="pic">
+      <img src={selfie} alt='profile_pic' />
+    </section>
+  )
+}
 
 const Profile = () => {
   return (
@@ -12,36 +20,7 @@ const Profile = () => {
         <h2><span>ABOUT ME</span></h2>
         <div className="flex">
           <div className='flex'>
-            <section className="pic">
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-            </section>
-            <section className="pic">
-            <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-            </section>
-            <section className="pic">
-            <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-            </section>
-            <section className="pic">
-            <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-            </section>
-            <section className="pic">
-            <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-              <img src={selfie} alt='profile_pic' />
-            </section>
+            <Selfie />
           </div>
           <div className='information'>
             <section className="text">
