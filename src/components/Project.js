@@ -48,6 +48,7 @@ const linkData = [
     isTitleKorean: true,
     to: "/soomgo",
     skills: [
+      "Responsive Web",
       "HTML",
       "CSS",
       "JavaScript"
