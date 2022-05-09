@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3fd926e9.css",
-    "main.js": "/portfolio/static/js/main.e52845ed.js",
+    "main.js": "/portfolio/static/js/main.ddec511a.js",
     "static/media/soomgo_flow_tnm.png": "/portfolio/static/media/soomgo_flow_tnm.ffcdfc123d0f000bb5c1.png",
     "static/media/kocca_flow.png": "/portfolio/static/media/kocca_flow.0c094bb10e098f1cc653.png",
     "static/media/S-CoreDream-5Medium.svg": "/portfolio/static/media/S-CoreDream-5Medium.c304b6a828a97bcb87d5.svg",
@@ -46,10 +46,10 @@
     "static/media/project-graphics1.svg": "/portfolio/static/media/project-graphics1.c37de7c1846c183d2b8962cd85c7743f.svg",
     "static/media/project-graphics3.svg": "/portfolio/static/media/project-graphics3.bc7daab32aa9d625301b37d550d21568.svg",
     "main.3fd926e9.css.map": "/portfolio/static/css/main.3fd926e9.css.map",
-    "main.e52845ed.js.map": "/portfolio/static/js/main.e52845ed.js.map"
+    "main.ddec511a.js.map": "/portfolio/static/js/main.ddec511a.js.map"
   },
   "entrypoints": [
     "static/css/main.3fd926e9.css",
-    "static/js/main.e52845ed.js"
+    "static/js/main.ddec511a.js"
   ]
 }
