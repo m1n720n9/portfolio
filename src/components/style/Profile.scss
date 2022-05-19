@@ -33,7 +33,10 @@
       justify-content: center;
       padding-top: 40px;
       .pic{
-        img{width:400px;}
+        img{
+          width:350px;
+          box-shadow: 0 0 10px #fff; margin-right: 10px;
+        }
       }
       .information{
         margin-left: 50px;

@@ -7,6 +7,7 @@ const Soomgo = () => {
         <div className='text'>
           <h2>숨고</h2>
           <p>HTML, CSS, JavaScript을 이용하여 제작한 반응형 클론 코딩</p>
+          <p>Responsive Web / Media Query / Swiper.js</p>
           <div className='skills'>
             <img className='skill_logo' src={require("./img/logo_html.png")} />
             <img className='skill_logo' src={require('./img/logo_css.png')} />
