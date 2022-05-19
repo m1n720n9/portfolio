@@ -9,9 +9,10 @@ import frame4 from './img/project-graphics4.svg';
 import frame5 from './img/project-graphics5.svg';
 import frame6 from './img/project-graphics6.svg';
 import frame7 from './img/project-graphics7.svg';
-import con_detail from './img/con_color.png';
-import megabox_detail from './img/megabox_color.png';
-import soomgo_detail from './img/soomgo_color.png';
+import con_detail from './img/con_detail.png';
+import megabox_detail from './img/megabox_detail.png';
+import soomgo_detail from './img/soomgo_detail.png';
+import todo_detail from './img/todolist_detail.png';
 
 const linkData = [
   {
@@ -48,6 +49,7 @@ const linkData = [
     isTitleKorean: true,
     to: "/soomgo",
     skills: [
+      "Responsive Web",
       "HTML",
       "CSS",
       "JavaScript"
@@ -60,12 +62,13 @@ const linkData = [
     index: 4,
     title : "TO DO LIST",
     isTitleKorean: false,
-    to: "/",
+    to: "/todo_list",
     skills: [
       "HTML",
       "CSS",
       "JavaScript"
     ],
+    img : todo_detail,
     frameImg: frame4,
     classN : "pro_item project4"
   },
@@ -94,11 +97,12 @@ const linkData = [
   },
   {
     index: 7,
-    title : "NETFLIX",
+    title : "Portfolio",
     isTitleKorean: false,
     to: "/",
     skills: [
-      "React"
+      "React",
+      "SCSS"
     ],
     frameImg: frame7,
     classN : "pro_item project7"
