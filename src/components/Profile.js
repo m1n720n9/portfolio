@@ -1,6 +1,6 @@
 import './style/Profile.scss';
 import logo from './img/logo.svg';
-import selfie from "./img/pic.jpg";
+import selfie from "./img/zev.jpg";
 
 const Selfie = () => {
   return(
