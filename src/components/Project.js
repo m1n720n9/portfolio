@@ -125,7 +125,7 @@ const Project = () => {
   )
 };
 
-export default Project;
+
 
 const ALink = ({data: {
     index, 
@@ -158,6 +158,8 @@ const ALink = ({data: {
     </Link>
   )
 }
+
+export default Project;
 
   // const handleMouseMove = (rotate) => {
   //   let x = (window.innerWidth / 2 - rotate.clientX) / 20;

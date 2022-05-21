@@ -1,6 +1,7 @@
 import './style/Contact.scss';
+import TextLoop from "react-text-loop";
 import logo from './img/logo.svg'
-
+import github from './img/github.svg'
 
 const Contact = () => {
   return (
@@ -10,29 +11,25 @@ const Contact = () => {
       </header>
       <main className="contact_m">
         <h2>
-          <p>LET'S
-            <span> W</span>
-            <span>O</span>
-            <span>R</span>
-            <span>K</span>
-            <span>&nbsp;</span>
-            <span>T</span>
-            <span>O</span>
-            <span>G</span>
-            <span>E</span>
-            <span>T</span>
-            <span>H</span>
-            <span>E</span>
-            <span>R</span>
-          </p>
+          {"LET'S "}
+          <TextLoop springConfig={{stiffness: 50, damping: 10}}>
+              <span>WORK TOGETHER</span>
+              <span>GRAB A COFFEE</span>
+              <span>TALK DEVELOPMENT</span>
+              <span>DO LUNCH</span>
+              <span>CREAT SOMETHING</span>
+          </TextLoop>
         </h2>
         <section className='info'>
           <p>NAME : 석민정</p>
           <p>E-mail : skmnjng@gmail.com</p>
           <p>Address : 경기도 수원시</p>
           <p>TEL : 010-7157-0818</p>
+          <a href='https://github.com/m1n720n9' target="blank"><img src={github} /></a>
         </section>
+        
       </main>
+     
   </div>
   )
 };
