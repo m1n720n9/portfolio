@@ -5,6 +5,7 @@ import Kocca from "./routes/kocca";
 import Megabox from "./routes/megabox";
 import Soomgo from "./routes/soomgo";
 import Todo_list from "./routes/todo_list";
+import Portfolio from "./routes/portfolio";
 import "./Router.scss";
 import { useRef } from "react";
 
@@ -28,6 +29,8 @@ function Router (){
               <Route path="/soomgo" component={Soomgo}>
               </Route>
               <Route path="/todo_list" component={Todo_list}>
+              </Route>
+              <Route path="/portfolio1" component={Portfolio}>
               </Route>
               <Route path="/" component={Home}>
               </Route>

@@ -13,6 +13,8 @@ import con_detail from './img/con_detail.png';
 import megabox_detail from './img/megabox_detail.png';
 import soomgo_detail from './img/soomgo_detail.png';
 import todo_detail from './img/todolist_detail.png';
+import portfolio_detail from './img/portfolio_detail.png';
+
 
 const linkData = [
   {
@@ -99,11 +101,12 @@ const linkData = [
     index: 7,
     title : "Portfolio",
     isTitleKorean: false,
-    to: "/",
+    to: "/portfolio1",
     skills: [
       "React",
       "SCSS"
     ],
+    img : portfolio_detail,
     frameImg: frame7,
     classN : "pro_item project7"
   },
@@ -160,16 +163,3 @@ const ALink = ({data: {
 }
 
 export default Project;
-
-  // const handleMouseMove = (rotate) => {
-  //   let x = (window.innerWidth / 2 - rotate.clientX) / 20;
-  //   let y = (window.innerHeight / 2 - rotate.clientY) /8;
-  //   titleRef.current.style.transform = "rotateY(" +  -x + "deg) rotateX(" + y + "deg)";
-  // }
-  // const handleMouseOut = () => {
-  //   titleRef.current.style.transform = "rotate(0)"
-  // }
-
-  // console.log(skills)
-
-  // onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}

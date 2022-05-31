@@ -2,7 +2,7 @@
 @import '../../components/style/font.scss';
 
 
-#kocca{
+#todo_list{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -11,7 +11,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: $color1_2;
+    background: $color4_2;
     width: 70vw;
     height: 85vh;
     border-radius: 0 30% 0 0 / 0 40% 0 0;
@@ -20,7 +20,7 @@
       h2{
         font: 60px 'S_CoreDream_Medium';
         color: #222;
-        margin-bottom: 90px;
+        margin-bottom: 80px;
         a{
           img{
             height: 70px;
@@ -35,13 +35,13 @@
           font-family: 'S_CoreDream_Medium';
           font-size: 24px;
           padding-left: 40px;
-          margin-bottom: 50px;
+          margin-bottom: 45px;
           background: url(../img/ico_check.png) no-repeat left/ 24px;
         }
       }
       p{
         font-family: 'S_CoreDream_Medium';
-        margin: 50px 0;
+        margin: 45px 0;
         font-size: 24px;
         img{
           width: 24px;
@@ -60,11 +60,8 @@
       }
     }
   }
-  .back{
-    span{position: absolute; left: 0; font-size: 50px;}
-  }
   .flow_img{
-    img{width: 30%; position: absolute; top: -10%; right: 10%; transform: rotate(25deg);
+    img{width: 30%; position: absolute; top: -10%; right:2%; transform: rotate(25deg);
     }
     span{font: 24px 'VanguardCF'; position: absolute; top: 50%; right: 32%; transform: rotate(25deg);}
   }

@@ -1,6 +1,8 @@
 import './style/kocca.scss'
+import { Link } from 'react-router-dom'
 import ico_clock from './img/ico_clock.png'
 import ico_pro from './img/ico_pro.png'
+import Project from '../components/Project'
 
 const Kocca = () => {
   return(
@@ -30,7 +32,10 @@ const Kocca = () => {
       <div className="flow_img">
         <a href="https://m1n720n9.github.io/kocca/" target='_blank'><img src={require('./img/kocca_flow.png')} /></a>
         <span>CLICK TO GO TO PAGE &rarr;</span>
-      </div>  
+      </div>
+      <Link to="<Project />" className="back">
+        <span>&lt;&lt;</span>
+      </Link> 
     </section>
   )
 }
