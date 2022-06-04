@@ -13,9 +13,10 @@ const Megabox = () => {
         </div>
         <div className='text'>
           <ul>
-            <li>Vanilla JavaScript를 사용하여 만든 클론 코딩</li>
-            <li>Swiper.js를 이용하여 슬라이드 및 탭 구현</li>
-            <li className='issue'>click event 사용시 동시 적용</li>
+            <li>Vanilla JavaScript를 사용하여 만든 메가박스 클론 코딩</li>
+            <li>Swiper.js를 이용하여 슬라이드 구현</li>
+            <li>함수형 코드로 중복된 코드 개선</li>
+            <li className='browser'>Cross Browsing (Chrome, Firefox)</li>
           </ul>
           <p><img src={ico_pro}/> 사용 기술 : HTML CSS JavaScript</p>
           <p><img src={ico_clock}/> 제작 기간 : 2주</p>

@@ -14,12 +14,16 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 main, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+  -ms-overflow-style: none;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

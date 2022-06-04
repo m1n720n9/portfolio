@@ -15,8 +15,7 @@ const Todo_list = () => {
           <ul>
             <li>JavaScript의 기본기를 이해하기 위해 Vanilla JS로 만든 웹 서비스</li>
             <li>시계, 할 일 목록, 날씨, 랜덤 이미지 및 텍스트 제공 등의 기능 구현</li>
-            <li>OpenWeather API</li>
-            <li>Geolocation API</li>
+            <li>Data Fetching ( OpenWeather API, Geolocation API )</li>
             <li>Local Storage를 사용하여 데이터 관리</li>
           </ul>
           <p><img src={ico_pro}/> 사용 기술 : HTML CSS JavaScript</p>

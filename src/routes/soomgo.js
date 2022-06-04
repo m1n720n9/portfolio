@@ -12,9 +12,10 @@ const Soomgo = () => {
         </div>
         <div className='text'>
           <ul>
-            <li>PC, Tablet, Mobile 반응형 웹페이지 제작</li>
-            <li>flex box와 Media Query 연습</li>
+            <li>PC, Tablet, Mobile 환경을 고려하여 제작한 반응형 웹사이트</li>
+            <li>rem, flex box, Media Query 이용</li>  
             <li>Swiper.js를 이용하여 슬라이드 및 탭 구현</li>
+            <li className='browser'>Cross Browsing (Chrome, Firefox)</li>
           </ul>
           <p><img src={ico_pro}/> 사용 기술 : HTML CSS JavaScript</p>
           <p><img src={ico_clock}/> 제작 기간 : 4일</p>

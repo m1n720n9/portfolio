@@ -7,20 +7,19 @@
   width: 100vw;
   max-width: 100%;
   position: relative;
-/*   &::after{
+  &::after{
     position: absolute;
     top: 0;
     left: 0;
     content: "";
     width: 100%;
-    opacity: .2;
+    opacity: .4;
     height: 100%;
     z-index: -1;
-    background: url("../img/profile.jpg") no-repeat left/40%;
-  } */
+    background: url("../img/picpic.jpg") no-repeat left/100%;
+  }
   .profile_h{
     height: 50px;
-    line-height: 50px;
     h1{
       img{
         width: 50px;
@@ -28,12 +27,15 @@
       }
     }
   }
-  .profile_c{
+  .container{
     width: 90vw;
     margin: 0 auto;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px 150px;
+    box-sizing: border-box;
     h2{
       font-size: 80px;
-      text-align: center;
       font-family: 'VanguardCF', sans-serif;
       margin-bottom: 40px;
       span{
@@ -41,58 +43,43 @@
         text-shadow: 0 2px 4px rgba(255, 255, 255, 0.25);
       }
     }
-    .flex{
-      display: flex;
-      justify-content: center;
-      padding-top: 40px;
-      .pic{
-        img{
-          width:350px;
-          box-shadow: 0 0 10px #fff; margin-right: 10px;
+    .information{
+      font-family: 'S_CoreDream_Medium', sans-serif;
+      .text{
+        p{
+          font-size: 24px;
+          margin: 40px 0;
+          padding-right:10px ;
         }
       }
-      .information{
-        margin-left: 50px;
-        font-family: 'S_CoreDream_Medium', sans-serif;
-        .text{
-          p{
-            font-size: 24px;
-            margin: 40px 0;
+      .skills{
+        font-family: 'VanguardCF', sans-serif;
+        padding-top: 30px;
+        h3{
+          font-size: 80px;
+          position: relative;
+          padding-bottom: 20px;
+          span{
+            border-bottom: 3px solid #ddd;
           }
         }
-        .skills{
-          padding-top: 30px;
-          border: 1px solid rgba(255,255,255,.1);
-          border-radius: 50px;
-          h3{
-            font-size: 30px;
-            position: relative;
-            padding-bottom: 20px;
-            text-align: center;
-          }
-          .skill{
-            display: flex;
-            padding: 16px;
-            justify-content: space-between;
-            span{
-              font-size: 20px;
-              font-weight: bold;
-              width: 130px;
-              height: 130px;
-              background: #fff;
-              border-radius: 50%;
-              display: block;
-              text-align: center;
-              color: #222;
-              line-height: 114px;
-              &:not(:last-child){margin-right: 50px;}
-              &:nth-child(1){border: 8px solid $color1;}
-              &:nth-child(2){border: 8px solid $color2;}
-              &:nth-child(3){border: 8px solid $color3;}
-              &:nth-child(4){border: 8px solid $color4;}
-              &:nth-child(5){border: 8px solid $color5;}
-              &:nth-child(6){border: 8px solid $color7;}
-            }
+        .skill{
+          display: flex;
+          padding: 16px;
+          justify-content: space-between;
+          span{
+            width: 130px;
+            height: 130px;
+            background: #fff no-repeat center center/60px;
+            border-radius: 50%;
+            display: block;
+            &:nth-child(1){border: 8px solid #E55638; background-image: url('../img/logo_html.png');}
+            &:nth-child(2){border: 8px solid #35A8DB; background-image: url('../img/logo_css.png');}
+            &:nth-child(3){border: 8px solid #CD6799; background-image: url('../img/logo_sass.png');}
+            &:nth-child(4){border: 8px solid #0868AC; background-image: url('../img/logo_jquery.png');}
+            &:nth-child(5){border: 8px solid #DAB92D; background-image: url('../img/logo_js.png');}
+            &:nth-child(6){border: 8px solid #00CCFF; background-image: url('../img/logo_react.png');}
+            &:nth-child(7){border: 8px solid #3178C6; background-image: url('../img/logo_ts.png');}
           }
         }
       }

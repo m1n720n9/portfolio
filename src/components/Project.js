@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/Project.scss';
 import logo from './img/logo.svg';
@@ -78,7 +77,7 @@ const linkData = [
     index: 5,
     title : "COIN TRACKER",
     isTitleKorean: false,
-    to: "/",
+    to: "/cryptocurrency_tracker",
     skills: [
       "React",
       "TypeScript"
@@ -128,8 +127,6 @@ const Project = () => {
   )
 };
 
-
-
 const ALink = ({data: {
     index, 
     title,
@@ -144,22 +141,21 @@ const ALink = ({data: {
     <Link to={to} className={classN}>
             <h3>{`0${index}`} {isTitleKorean ? <span className='kr_font'>{title}</span>: <>{title}</>}</h3>
             <p>{skills.map((skill, idx )=>
-            <span key={Math.random()}>
-            {idx === 0 ? 
-              <>
-                {`# ${skill}`} 
-              </> 
-              :
-              <>
-                <br/>{`# ${skill}`} 
-              </> 
-            }
-            </span>
+              <span key={Math.random()}>
+              {idx === 0 ? 
+                <>
+                  {`# ${skill}`} 
+                </> 
+                :
+                <>
+                  <br/>{`# ${skill}`} 
+                </> 
+              }
+              </span>
             )}</p>
             <img src={frameImg} alt='frame' />
             <img src={img} className={'detail_photo'} />
     </Link>
   )
 }
-
 export default Project;

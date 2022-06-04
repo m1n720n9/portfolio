@@ -1,10 +1,11 @@
 import './style/kocca.scss'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import ico_clock from './img/ico_clock.png'
 import ico_pro from './img/ico_pro.png'
 import Project from '../components/Project'
 
 const Kocca = () => {
+  let history = useHistory();
   return(
     <section id='kocca'>
       <div className="color_box">
@@ -18,7 +19,7 @@ const Kocca = () => {
             <li>HTML, CSS, JQuery 기본기를 익히기 위해 만든 관공서 웹 페이지</li>
             <li>웹 표준 및 웹 접근성을 고려한 마크업</li>
             <li>JQuery를 이용하여 슬라이드 및 탭 구현</li>
-            <li>9개의 서브페이지 제작</li>
+            <li className='browser'>Cross Browsing (Chrome, Firefox)</li>
           </ul>
           <p><img src={ico_pro}/> 사용 기술 : HTML CSS JQuery</p>
           <p><img src={ico_clock}/> 제작 기간 : 1개월</p>
@@ -33,9 +34,11 @@ const Kocca = () => {
         <a href="https://m1n720n9.github.io/kocca/" target='_blank'><img src={require('./img/kocca_flow.png')} /></a>
         <span>CLICK TO GO TO PAGE &rarr;</span>
       </div>
-      <Link to="<Project />" className="back">
+      <button onClick={ () => {
+          history.push('/project');
+        } } className="back">
         <span>&lt;&lt;</span>
-      </Link> 
+      </button> 
     </section>
   )
 }

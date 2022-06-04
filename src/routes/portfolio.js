@@ -14,17 +14,15 @@ const Portfolio = () => {
         <div className='text'>
           <ul>
             <li>React.js를 기반으로 만든 개인 포트폴리오 웹 페이지</li>
-            <li>시계, 할 일 목록, 날씨, 랜덤 이미지 및 텍스트 제공 등의 기능 구현</li>
-            <li>OpenWeather API</li>
-            <li>Geolocation API</li>
-            <li>Local Storage를 사용하여 데이터 관리</li>
+            <li>react-router-dom</li>
+            <li>Page Scroll Event ( react-full-page )</li>
+            <li>React library를 활용하여 동적인 페이지 제작 ( react-transition-group, react-text-loop )</li>
           </ul>
           <p><img src={ico_pro}/> 사용 기술 : React Sass</p>
           <p><img src={ico_clock}/> 제작 기간 : 1개월</p>
           <div className='skills'>
             <img className='skill_logo' src={require("./img/logo_react.png")} />
             <img className='skill_logo' src={require('./img/logo_sass.png')} />
-            <img className='skill_logo' src={require('./img/logo_js.png')} />
           </div>
         </div>      
       </div>

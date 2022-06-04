@@ -5,6 +5,7 @@ import Kocca from "./routes/kocca";
 import Megabox from "./routes/megabox";
 import Soomgo from "./routes/soomgo";
 import Todo_list from "./routes/todo_list";
+import CoinTracker from "./routes/coin_tracker"
 import Portfolio from "./routes/portfolio";
 import "./Router.scss";
 import { useRef } from "react";
@@ -22,18 +23,13 @@ function Router (){
         <TransitionGroup ref={transitionGroupRef} className="transition-group">
           <CSSTransition ref={pageRef} key={location.pathname} timeout={1000} classNames="page">
             <Switch>
-              <Route path="/kocca" component={Kocca}>
-              </Route>
-              <Route path="/megabox" component={Megabox}>
-              </Route>
-              <Route path="/soomgo" component={Soomgo}>
-              </Route>
-              <Route path="/todo_list" component={Todo_list}>
-              </Route>
-              <Route path="/portfolio1" component={Portfolio}>
-              </Route>
-              <Route path="/" component={Home}>
-              </Route>
+              <Route path="/kocca" component={Kocca}></Route>
+              <Route path="/megabox" component={Megabox}></Route>
+              <Route path="/soomgo" component={Soomgo}></Route>
+              <Route path="/todo_list" component={Todo_list}></Route>
+              <Route path="/coin_tracker" component={CoinTracker}></Route>
+              <Route path="/portfolio1" component={Portfolio}></Route>
+              <Route path="/" component={Home}></Route>
             </Switch>
           </CSSTransition>
         </TransitionGroup>
