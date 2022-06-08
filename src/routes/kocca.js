@@ -1,11 +1,9 @@
 import './style/kocca.scss'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import ico_clock from './img/ico_clock.png'
 import ico_pro from './img/ico_pro.png'
-import Project from '../components/Project'
 
 const Kocca = () => {
-  let history = useHistory();
   return(
     <section id='kocca'>
       <div className="color_box">
@@ -34,11 +32,9 @@ const Kocca = () => {
         <a href="https://m1n720n9.github.io/kocca/" target='_blank'><img src={require('./img/kocca_flow.png')} /></a>
         <span>CLICK TO GO TO PAGE &rarr;</span>
       </div>
-      <button onClick={ () => {
-          history.push('/project');
-        } } className="back">
+      <Link to={"/"}>
         <span>&lt;&lt;</span>
-      </button> 
+      </Link> 
     </section>
   )
 }

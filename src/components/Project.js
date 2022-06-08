@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './style/Project.scss';
 import logo from './img/logo.svg';
@@ -13,6 +14,75 @@ import megabox_detail from './img/megabox_detail.png';
 import soomgo_detail from './img/soomgo_detail.png';
 import todo_detail from './img/todolist_detail.png';
 import portfolio_detail from './img/portfolio_detail.png';
+
+
+const Project = () => { 
+  const handleProjectClick = () => {
+    const sy = window.scrollY
+    window.localStorage.setItem("toScroll", sy)
+  }
+  const moveToScroll = () => {
+    window.scrollTo({left: 0, top: localStorage.getItem("toScroll"), behavior:"smooth"})
+    window.localStorage.setItem("toScroll", 0)
+  }
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      moveToScroll();
+    }, 1300)
+    return ()=>clearTimeout(timer)
+  }, [])
+  return (
+  <div id="project">
+      <header className="project_h" onClick={moveToScroll}>
+        <h1><img src={logo} alt='logo' /></h1>
+      </header>
+      <main className="project_m">
+        <div className='pro_list'>
+          <h2><span >PROJECTS</span></h2>
+          {linkData.map((link, idx) =>
+            <ALink data={link} key={idx} onClick={()=>{handleProjectClick()}}   />
+         )}
+        </div>
+      </main>
+  </div>
+  )
+};
+
+const ALink = ({data: {
+    index, 
+    title,
+    isTitleKorean,
+    to,
+    skills,
+    img,
+    frameImg,
+    classN
+},onClick}) => {
+  const handleLinkClick = () => {
+    onClick()
+  }
+  return(
+    <Link to={to} className={classN} onClick={()=>{handleLinkClick();}}>
+            <h3>{`0${index}`} {isTitleKorean ? <span className='kr_font'>{title}</span>: <>{title}</>}</h3>
+            <p>{skills.map((skill, idx )=>
+              <span key={Math.random()}>
+              {idx === 0 ? 
+                <>
+                  {`# ${skill}`} 
+                </> 
+                :
+                <>
+                  <br/>{`# ${skill}`} 
+                </> 
+              }
+              </span>
+            )}</p>
+            <img src={frameImg} alt='frame' />
+            <img src={img} className={'detail_photo'} />
+    </Link>
+  )
+}
+export default Project;
 
 
 const linkData = [
@@ -77,7 +147,7 @@ const linkData = [
     index: 5,
     title : "COIN TRACKER",
     isTitleKorean: false,
-    to: "/cryptocurrency_tracker",
+    to: "/coin_tracker",
     skills: [
       "React",
       "TypeScript"
@@ -110,52 +180,3 @@ const linkData = [
     classN : "pro_item project7"
   },
 ]
-
-const Project = () => {
-  return (
-  <div id="project">
-      <header className="project_h">
-        <h1><img src={logo} alt='logo' /></h1>
-      </header>
-      <main className="project_m">
-        <div className='pro_list'>
-          <h2><span>PROJECTS</span></h2>
-          {linkData.map((link, idx) => <ALink data={link} key={idx} />)}
-        </div>
-      </main>
-  </div>
-  )
-};
-
-const ALink = ({data: {
-    index, 
-    title,
-    isTitleKorean,
-    to,
-    skills,
-    img,
-    frameImg,
-    classN
-}}) => {
-  return(
-    <Link to={to} className={classN}>
-            <h3>{`0${index}`} {isTitleKorean ? <span className='kr_font'>{title}</span>: <>{title}</>}</h3>
-            <p>{skills.map((skill, idx )=>
-              <span key={Math.random()}>
-              {idx === 0 ? 
-                <>
-                  {`# ${skill}`} 
-                </> 
-                :
-                <>
-                  <br/>{`# ${skill}`} 
-                </> 
-              }
-              </span>
-            )}</p>
-            <img src={frameImg} alt='frame' />
-            <img src={img} className={'detail_photo'} />
-    </Link>
-  )
-}
-export default Project;

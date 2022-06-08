@@ -1,6 +1,7 @@
 import './style/soomgo.scss'
 import ico_clock from './img/ico_clock.png'
 import ico_pro from './img/ico_pro.png'
+
 const Soomgo = () => {
   return(
     <section id='soomgo'>
