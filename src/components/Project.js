@@ -14,6 +14,8 @@ import megabox_detail from './img/megabox_detail.png';
 import soomgo_detail from './img/soomgo_detail.png';
 import todo_detail from './img/todolist_detail.png';
 import portfolio_detail from './img/portfolio_detail.png';
+import coin_detail from './img/coin_detail.png';
+
 
 
 const Project = () => { 
@@ -152,6 +154,7 @@ const linkData = [
       "React",
       "TypeScript"
     ],
+    img:coin_detail,
     frameImg: frame5,
     classN : "pro_item project5"
   },
@@ -159,7 +162,6 @@ const linkData = [
     index: 6,
     title : "TRELLO",
     isTitleKorean: false,
-    to: "/",
     skills: [
       "React"
     ],
