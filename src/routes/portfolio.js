@@ -27,7 +27,7 @@ const Portfolio = () => {
         </div>      
       </div>
       <div className="flow_img">
-        <a href="https://m1n720n9.github.io/portfolio/" target='_blank'><img src={require('./img/todo_flow.png')} /></a>
+        <a href="https://m1n720n9.github.io/portfolio/" target='_blank'><img src={require('./img/portfolio_flow.png')} /></a>
         <span>CLICK TO GO TO PAGE &rarr;</span>
       </div>
     </section>

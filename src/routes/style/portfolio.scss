@@ -2,7 +2,7 @@
 @import '../../components/style/font.scss';
 
 
-#todo_list{
+#portfolio{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -11,7 +11,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: $color4_2;
+    background: $color7_2;
     width: 70vw;
     height: 85vh;
     border-radius: 0 30% 0 0 / 0 40% 0 0;
@@ -61,7 +61,7 @@
     }
   }
   .flow_img{
-    img{width: 30%; position: absolute; top: -10%; right:2%; transform: rotate(25deg);
+    img{width: 30%; position: absolute; top: -10%; right:0; transform: rotate(25deg);
     }
     span{font: 24px 'VanguardCF'; position: absolute; top: 50%; right: 32%; transform: rotate(25deg);}
   }
