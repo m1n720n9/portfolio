@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import './style/Main.scss';
-import logo from './img/logo.svg'
+import logo from './img/logo_w.png'
 
 const Main = () => {
   const titleRef = useRef()

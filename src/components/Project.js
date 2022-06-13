@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './style/Project.scss';
-import logo from './img/logo.svg';
+import logo from './img/logo_w.png'
 import frame1 from './img/project-graphics1.svg';
 import frame2 from './img/project-graphics2.svg';
 import frame3 from './img/project-graphics3.svg';
@@ -80,7 +80,7 @@ const ALink = ({data: {
               </span>
             )}</p>
             <img src={frameImg} alt='frame' />
-            <img src={img} className={'detail_photo'} />
+            <img src={img} className={'detail_photo'} alt='detail_photo' />
     </Link>
   )
 }

@@ -5,7 +5,6 @@ import {darkTheme, lightTheme} from './theme';
 import GlobalStyle from './GlobalStyle';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
   return(
   <ThemeProvider theme={darkTheme}>
     <GlobalStyle />
