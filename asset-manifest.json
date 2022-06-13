@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6688584e.css",
-    "main.js": "/portfolio/static/js/main.83121986.js",
+    "main.css": "/portfolio/static/css/main.1015f2eb.css",
+    "main.js": "/portfolio/static/js/main.31a252bf.js",
     "static/media/todo_flow.png": "/portfolio/static/media/todo_flow.e9341110af877159c986.png",
     "static/media/soomgo_flow_tnm.png": "/portfolio/static/media/soomgo_flow_tnm.ffcdfc123d0f000bb5c1.png",
     "static/media/kocca_flow.png": "/portfolio/static/media/kocca_flow.0c094bb10e098f1cc653.png",
     "static/media/portfolio_flow.png": "/portfolio/static/media/portfolio_flow.ffdae3e7387d99f3f630.png",
-    "static/media/S-CoreDream-5Medium.svg": "/portfolio/static/media/S-CoreDream-5Medium.1146f4f494b56818734b.svg",
-    "static/media/S-CoreDream-4Regular.svg": "/portfolio/static/media/S-CoreDream-4Regular.098b7fe4d829da37f809.svg",
+    "static/media/S-CoreDream-5Medium.svg": "/portfolio/static/media/S-CoreDream-5Medium.c304b6a828a97bcb87d5.svg",
+    "static/media/S-CoreDream-4Regular.svg": "/portfolio/static/media/S-CoreDream-4Regular.ca5e2786196ca1086bdc.svg",
     "static/media/SDSwaggerTTF.ttf": "/portfolio/static/media/SDSwaggerTTF.3c17e23f286da3529ce4.ttf",
     "static/media/megabox_flow.png": "/portfolio/static/media/megabox_flow.1cf832ca73e0049d8fd1.png",
     "static/media/profile.jpg": "/portfolio/static/media/profile.27481509bea487e7317e.jpg",
@@ -31,7 +31,7 @@
     "static/media/logo_github.png": "/portfolio/static/media/logo_github.9d243d271ef69d345984.png",
     "static/media/S-CoreDream-4Regular.woff2": "/portfolio/static/media/S-CoreDream-4Regular.016e0d236cbf1bc4295b.woff2",
     "static/media/soomgo_detail.png": "/portfolio/static/media/soomgo_detail.6acf9acf92f2b843ede8.png",
-    "static/media/VanguardCF-Bold.svg": "/portfolio/static/media/VanguardCF-Bold.a00d6f9a5ee72f40e86b.svg",
+    "static/media/VanguardCF-Bold.svg": "/portfolio/static/media/VanguardCF-Bold.03220c2e119a99fa0e7e.svg",
     "static/media/coin_detail.png": "/portfolio/static/media/coin_detail.28105fb81556ee69740e.png",
     "static/media/VanguardCF-Bold.eot": "/portfolio/static/media/VanguardCF-Bold.c4477b00ad3408fc6400.eot",
     "static/media/VanguardCF-Bold.ttf": "/portfolio/static/media/VanguardCF-Bold.aca01401d143cd1e4b6f.ttf",
@@ -49,20 +49,19 @@
     "static/media/VanguardCF-Bold.woff2": "/portfolio/static/media/VanguardCF-Bold.a4b427c89374000c79b3.woff2",
     "static/media/logo_ts.png": "/portfolio/static/media/logo_ts.eeb913e1ece4dd5b1fda.png",
     "index.html": "/portfolio/index.html",
-    "static/media/project-graphics6.svg": "/portfolio/static/media/project-graphics6.f287ad82e374e53915b529bb4761eba9.svg",
-    "static/media/project-graphics7.svg": "/portfolio/static/media/project-graphics7.267beeb22744a00ae4c170ac53e8b266.svg",
+    "static/media/project-graphics6.svg": "/portfolio/static/media/project-graphics6.6600d9326a5011bc73c65c579b969138.svg",
+    "static/media/project-graphics7.svg": "/portfolio/static/media/project-graphics7.d3e63c2f6d3f4b4c64f565985dd8a478.svg",
     "static/media/github.svg": "/portfolio/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
-    "static/media/logo.svg": "/portfolio/static/media/logo.d35a081603219be2fe8672890964f4a4.svg",
     "static/media/project-graphics2.svg": "/portfolio/static/media/project-graphics2.5f39d055fac319386ebfa02099aad78c.svg",
     "static/media/project-graphics4.svg": "/portfolio/static/media/project-graphics4.9468492ce131104b39f982944ad2a9eb.svg",
     "static/media/project-graphics5.svg": "/portfolio/static/media/project-graphics5.6d3732d9f3b22bcae06d8d83eec32532.svg",
     "static/media/project-graphics1.svg": "/portfolio/static/media/project-graphics1.c37de7c1846c183d2b8962cd85c7743f.svg",
     "static/media/project-graphics3.svg": "/portfolio/static/media/project-graphics3.bc7daab32aa9d625301b37d550d21568.svg",
-    "main.6688584e.css.map": "/portfolio/static/css/main.6688584e.css.map",
-    "main.83121986.js.map": "/portfolio/static/js/main.83121986.js.map"
+    "main.1015f2eb.css.map": "/portfolio/static/css/main.1015f2eb.css.map",
+    "main.31a252bf.js.map": "/portfolio/static/js/main.31a252bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.6688584e.css",
-    "static/js/main.83121986.js"
+    "static/css/main.1015f2eb.css",
+    "static/js/main.31a252bf.js"
   ]
 }
